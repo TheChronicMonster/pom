@@ -34,24 +34,26 @@ export const main = Reach.App(() => {
     Maker.interact.marketReady();
     assert(balance(tokenId) == amt, "balance is wrong");
     const [
-        currentBid,
+        currentPrice,
         askPrice,
     ] = parallelReduce([Maker, priceOpen])
         .invariant(balance(tokenId) == amt)
         .while(true)
         .api_(Staker.buy, (buy) => {
-            check(buy > askPrice, "buy price too low");
+            //check(buy >= askPrice, "buy price too low");
             return [ buy, (notify) => {
-                notify([currentBid, askPrice]);
+                notify([currentPrice, askPrice]);
                 const who = this;
+                Maker.interact.seeTransaction(who, buy);
                 return [who, buy];
             }];
         })
         .api_(Staker.sell, (sell) => {
-            check(sell <= askPrice, "sell price too high");
+            //check(sell <= askPrice, "sell price too high");
             return [ sell, (notify) => {
-                notify([currentBid, askPrice]);
+                notify([currentPrice, askPrice]);
                 const who = this;
+                Maker.interact.seeTransaction(who, sell);
                 return [who, sell];
             }];
         })
