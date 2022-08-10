@@ -12,20 +12,29 @@ body {
 #mainContainer {}
 
 #innerContainer {
-    top: 20vh;
+    top: 15vh;
     text-align: left;
     position: relative;
     background: rgba(0, 0, 0, .5);
     backdrop-filter: blur(8px);
     left :10%;
     width:80%;
-    min-height: 50vh;
+    min-height: 70vh;
     font-size: 20px;
+    border-radius: 20px;
+}
 
+#header {
+    text-align: left;
+    left: 15px;
+    top: 15px;
+    position: relative;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 60px;
 }
 
 #descriptionDiv {
-    width: 50%;
+    width: 70%;
 
 }
 
@@ -35,21 +44,18 @@ body {
     position: relative;
     font-family: 'Raleway';font-size: 22px;
     width: 50%;
+    font-size: 25px;
+}
+
+#secondDesc {
+    font-size: 45px;
 }
 
 .green {
-    color: green;
+    color: #42AD0F;
 }
 
 .brown {
-    color: brown;
+    color: #DAB195;
 }
 
-#header {
-    text-align: left;
-    left: 15px;
-    top: 15px;
-    position: relative;
-    font-family: 'Lexend Deca', sans-serif;
-
-}
