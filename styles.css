@@ -57,7 +57,21 @@ body {
 }
 
 #secondDesc {
-    font-size: 50px;
+    font-size: 53px;
+}
+
+#enterButton {
+    background: white;
+    color: #42AD0F;
+    position: relative;
+    bottom: 60px;
+    left: 75px;
+    border-radius: 10px;
+    width: 200px;
+    height: 60px;
+    font-size: 25px;
+    font-family: 'Raleway';font-size: 22px;
+
 }
 
 .green {
