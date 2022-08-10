@@ -24,6 +24,19 @@ body {
     border-radius: 20px;
 }
 
+#innerContainer4 {
+    top: 15vh;
+    text-align: left;
+    position: relative;
+    background: rgba(0, 0, 0, .5);
+    backdrop-filter: blur(8px);
+    left :10%;
+    width:80%;
+    min-height: 82vh;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
 #mushContainer {
     background: url(./mushroom.png);
     background-position: right bottom;
@@ -223,5 +236,26 @@ body {
 
 #moreButton {
     margin-right: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+#network {
+    padding-top: 40px;
+    width: 20%;
+}
+
+#graphContainer {
+    text-align: center;
+    color: black;
+    font-size: 30px;
+
+}
+
+#fourthContainer {
+    padding-top: 10px;
+}
+
+#fourthFooter {
+    margin-top: 17px;
+    text-align: center;
 }
