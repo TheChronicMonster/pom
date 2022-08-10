@@ -64,14 +64,19 @@ body {
     background: white;
     color: #42AD0F;
     position: relative;
-    bottom: 60px;
-    left: 75px;
+
     border-radius: 10px;
     width: 200px;
     height: 60px;
     font-size: 25px;
     font-family: 'Raleway';font-size: 22px;
 
+}
+
+#buttonDiv {
+    top: 60px;
+    position: relative;
+    left: 60px;
 }
 
 .green {
@@ -82,3 +87,39 @@ body {
     color: #DAB195;
 }
 
+#innerContainer2 {
+    background: white;  
+    min-height: 40vh;
+    border-radius: 10px;
+    top: 40px;
+    position: relative;
+    left:5%;
+    width: 90%;
+    display:flex;
+    flex-direction: row;
+    text-align:center;
+    align-items: center;
+}
+
+#leftDiv, #rightDiv {
+    width:50%;
+}
+
+#leftDiv img, #rightDiv img {
+    width: 35%;
+    top: 10px;
+    display: relative;
+}
+
+#leftButton, #rightButton {
+
+        background: white;
+        color: #42AD0F;
+      
+        border-radius: 10px;
+        width: 175px;
+        height: 60px;
+        font-size: 18px;
+        font-family: 'Raleway';
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
