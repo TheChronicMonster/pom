@@ -1,0 +1,55 @@
+body {
+    background: black;
+    background-image:url(./background.png);
+
+    background-size:cover;
+    color: white;
+    height: 100%;
+    width: 100%;
+
+}
+
+#mainContainer {}
+
+#innerContainer {
+    top: 20vh;
+    text-align: left;
+    position: relative;
+    background: rgba(0, 0, 0, .5);
+    backdrop-filter: blur(8px);
+    left :10%;
+    width:80%;
+    min-height: 50vh;
+    font-size: 20px;
+
+}
+
+#descriptionDiv {
+    width: 50%;
+
+}
+
+#description {
+    left: 25px;
+    top: 40px;
+    position: relative;
+    font-family: 'Raleway';font-size: 22px;
+    width: 50%;
+}
+
+.green {
+    color: green;
+}
+
+.brown {
+    color: brown;
+}
+
+#header {
+    text-align: left;
+    left: 15px;
+    top: 15px;
+    position: relative;
+    font-family: 'Lexend Deca', sans-serif;
+
+}
