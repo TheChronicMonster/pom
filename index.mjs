@@ -64,7 +64,6 @@ const startMarket = async () => {
     console.log(`${who} has ${stdlib.formatCurrency(amt, 4)} ${stdlib.standardUnit}`);
   };
 
-
   runMarket("Chul");
   runMarket("Hector");
   runMarket("JP");
