@@ -101,6 +101,18 @@ body {
     align-items: center;
 }
 
+#innerContainer3 {
+    background: white;  
+    min-height: 40vh;
+    border-radius: 10px;
+    top: 40px;
+    position: relative;
+    left:5%;
+    width: 90%;
+    text-align:center;
+    align-items: center;
+}
+
 #leftDiv, #rightDiv {
     width:50%;
 }
@@ -123,3 +135,93 @@ body {
         font-family: 'Raleway';
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
+
+#title {
+    color: #42AD0F;
+    background: white;
+    border-radius: 10px;
+    width: 70%;
+    display: relative;
+    text-align: center;
+    margin-left: 3%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#headContainer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#graph {
+    width:100%;
+}
+
+#insideHeader {
+    color: black;
+    padding-top: 10px;
+    margin-bottom: 15px;
+}
+
+.date {
+    border-radius: 20px;
+    border: 1px solid gray;
+    font-size: 16px;
+    padding: 0 25px;
+    margin: 0 5px;
+}
+
+.actions {
+    background: white;
+    color: #42AD0F;
+  
+    border-radius: 10px;
+    padding: 0 45px;
+    font-size: 18px;
+    font-family: 'Raleway';
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#footerContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    color: black;
+    font-size: 12px;
+    width: 100%;
+}
+#footerContainer > div {
+    flex: 1;
+}
+
+.gray {
+    color: #DDDDDD;
+}
+
+#secondFooter > span {
+    padding-top: 10px;
+    margin: 0 15px;
+}
+
+#moreButton {
+    background: white;
+    color: #42AD0F;
+  
+    border-radius: 10px;
+    padding: 0 45px;
+    font-size: 18px;
+    font-family: 'Raleway';
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#thirdFooter {
+    text-align: right;
+}
+
+#moreButton {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
