@@ -24,6 +24,19 @@ body {
     border-radius: 20px;
 }
 
+#innerContainer4 {
+    top: 15vh;
+    text-align: left;
+    position: relative;
+    background: rgba(0, 0, 0, .5);
+    backdrop-filter: blur(8px);
+    left :10%;
+    width:80%;
+    min-height: 82vh;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
 #mushContainer {
     background: url(./mushroom.png);
     background-position: right bottom;
@@ -57,7 +70,26 @@ body {
 }
 
 #secondDesc {
-    font-size: 50px;
+    font-size: 53px;
+}
+
+#enterButton {
+    background: white;
+    color: #42AD0F;
+    position: relative;
+
+    border-radius: 10px;
+    width: 200px;
+    height: 60px;
+    font-size: 25px;
+    font-family: 'Raleway';font-size: 22px;
+
+}
+
+#buttonDiv {
+    top: 60px;
+    position: relative;
+    left: 60px;
 }
 
 .green {
@@ -68,3 +100,162 @@ body {
     color: #DAB195;
 }
 
+#innerContainer2 {
+    background: white;  
+    min-height: 40vh;
+    border-radius: 10px;
+    top: 40px;
+    position: relative;
+    left:5%;
+    width: 90%;
+    display:flex;
+    flex-direction: row;
+    text-align:center;
+    align-items: center;
+}
+
+#innerContainer3 {
+    background: white;  
+    min-height: 40vh;
+    border-radius: 10px;
+    top: 40px;
+    position: relative;
+    left:5%;
+    width: 90%;
+    text-align:center;
+    align-items: center;
+}
+
+#leftDiv, #rightDiv {
+    width:50%;
+}
+
+#leftDiv img, #rightDiv img {
+    width: 35%;
+    top: 10px;
+    display: relative;
+}
+
+#leftButton, #rightButton {
+
+        background: white;
+        color: #42AD0F;
+      
+        border-radius: 10px;
+        width: 175px;
+        height: 60px;
+        font-size: 18px;
+        font-family: 'Raleway';
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+#title {
+    color: #42AD0F;
+    background: white;
+    border-radius: 10px;
+    width: 70%;
+    display: relative;
+    text-align: center;
+    margin-left: 3%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#headContainer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#graph {
+    width:100%;
+}
+
+#insideHeader {
+    color: black;
+    padding-top: 10px;
+    margin-bottom: 15px;
+}
+
+.date {
+    border-radius: 20px;
+    border: 1px solid gray;
+    font-size: 16px;
+    padding: 0 25px;
+    margin: 0 5px;
+}
+
+.actions {
+    background: white;
+    color: #42AD0F;
+  
+    border-radius: 10px;
+    padding: 0 45px;
+    font-size: 18px;
+    font-family: 'Raleway';
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#footerContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    color: black;
+    font-size: 12px;
+    width: 100%;
+}
+#footerContainer > div {
+    flex: 1;
+}
+
+.gray {
+    color: #DDDDDD;
+}
+
+#secondFooter > span {
+    padding-top: 10px;
+    margin: 0 15px;
+}
+
+#moreButton {
+    background: white;
+    color: #42AD0F;
+  
+    border-radius: 10px;
+    padding: 0 45px;
+    font-size: 18px;
+    font-family: 'Raleway';
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#thirdFooter {
+    text-align: right;
+}
+
+#moreButton {
+    margin-right: 10px;
+    margin-bottom: 30px;
+}
+
+#network {
+    padding-top: 40px;
+    width: 20%;
+}
+
+#graphContainer {
+    text-align: center;
+    color: black;
+    font-size: 30px;
+
+}
+
+#fourthContainer {
+    padding-top: 10px;
+}
+
+#fourthFooter {
+    margin-top: 17px;
+    text-align: center;
+}
