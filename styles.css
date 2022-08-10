@@ -24,6 +24,15 @@ body {
     border-radius: 20px;
 }
 
+#mushContainer {
+    background: url(./mushroom.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: 400px;
+    min-height: 70vh;
+
+}
+
 #header {
     text-align: left;
     left: 15px;
@@ -34,7 +43,7 @@ body {
 }
 
 #descriptionDiv {
-    width: 70%;
+    width: 62%;
 
 }
 
@@ -44,11 +53,11 @@ body {
     position: relative;
     font-family: 'Raleway';font-size: 22px;
     width: 50%;
-    font-size: 25px;
+    font-size: 30px;
 }
 
 #secondDesc {
-    font-size: 45px;
+    font-size: 50px;
 }
 
 .green {
