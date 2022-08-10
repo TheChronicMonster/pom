@@ -16,9 +16,6 @@ export const main = Reach.App(() => {
         buy: Fun([UInt], Tuple(Address, UInt)),
         sell: Fun([UInt], Tuple(Address, UInt)),
     });
-    // const careTaker = API('careTaker', {
-    //     request: Fun([UInt], Tuple(Address, UInt)),
-    // });
     const V = View('Main', {
         showPrice: UInt,
     });
@@ -40,25 +37,20 @@ export const main = Reach.App(() => {
         .invariant(balance(tokenId) == amt)
         .while(true)
         .api_(Staker.buy, (buy) => {
-            //check(buy >= askPrice, "buy price too low");
             return [ buy, (notify) => {
                 notify([currentPrice, askPrice]);
                 const who = this;
-                Maker.interact.seeTransaction(who, buy);
                 return [who, buy];
             }];
         })
         .api_(Staker.sell, (sell) => {
-            //check(sell <= askPrice, "sell price too high");
             return [ sell, (notify) => {
                 notify([currentPrice, askPrice]);
                 const who = this;
-                Maker.interact.seeTransaction(who, sell);
                 return [who, sell];
             }];
         })
-    //end parRed
-    transfer(amt, tokenId).to(Maker); // will change to API
+    transfer(amt, tokenId).to(Maker);
     commit();
     exit();
 });
